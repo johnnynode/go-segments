@@ -16,9 +16,9 @@ func main() {
 	msg := "hi"
 	select {
 	case messages <- msg:
-		fmt.Println("sent message", msg) // no message sent
+		fmt.Println("sent message", msg)
 	default:
-		fmt.Println("no message sent")
+		fmt.Println("no message sent") // no message sent
 	}
 
 	select {
