@@ -10,5 +10,5 @@ func fact(n int) int {
 }
 
 func main() {
-	fmt.Println(fact(7))
+	fmt.Println(fact(7)) // 5040 // 7 *6 * 5 *  * 3 * 2 * 1
 }
