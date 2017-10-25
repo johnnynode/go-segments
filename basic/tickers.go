@@ -8,7 +8,7 @@ import (
 func main() {
 	ticker := time.NewTicker(time.Microsecond * 500)
 	go func() {
-		for t:= range ticker.C {
+		for t := range ticker.C {
 			fmt.Println("Tick at", t)
 		}
 	}()
