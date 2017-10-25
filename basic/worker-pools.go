@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func worker(id int, jobs <-chan int, results chan<- int) {
+func worker(id int, jobs <-chan int, results chan <- int) {
 	for j := range jobs {
 		fmt.Println("worker", id, "started job", j)
 		time.Sleep(time.Second)
@@ -15,7 +15,7 @@ func worker(id int, jobs <-chan int, results chan<- int) {
 }
 
 func main() {
-	jobs := make(chan int ,100)
+	jobs := make(chan int, 100)
 	results := make(chan int, 100)
 
 	// 创建三个worker
@@ -24,17 +24,15 @@ func main() {
 	}
 
 	// 发送五次
-	for j:=1; j<=5; j++ {
+	for j := 1; j <= 5; j++ {
 		jobs <- j
 	}
 	close(jobs)
 
 	// 接收五次
-	for a:=1; a<=5; a++ {
-		<- results
+	for a := 1; a <= 5; a++ {
+		<-results
 	}
-
-
 
 }
 
