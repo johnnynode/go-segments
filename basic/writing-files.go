@@ -36,3 +36,12 @@ func main() {
 	fmt.Printf("wrote %d bytes\n", n4)
 	w.Flush()
 }
+
+/*
+
+$ go run basic/writing-files.go
+wrote 5 bytes
+wrote 7 bytes
+wrote 9 bytes
+
+*/
