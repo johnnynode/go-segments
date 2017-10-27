@@ -80,7 +80,7 @@ func main() {
 
 /*
 
-$ go run basic/JSON.go
+$ go run basic/json.go
 true
 1
 2.34
