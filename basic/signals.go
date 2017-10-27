@@ -24,3 +24,13 @@ func main() {
 	<- done
 	fmt.Println("exiting")
 }
+
+/*
+
+$ go run signals.go
+awaiting signal
+^C
+interrupt // 此处并不是输出内容，只是演示提示
+exiting // 退出
+
+*/
