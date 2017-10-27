@@ -48,7 +48,7 @@ go-segments
 - [String Functions](./basic/string-functions.go)
 - [String Formatting](./basic/string-formatting.go)
 - [Regular Expressions](./basic/regular-expressions.go)
-- [JSON](./basic/JSON.go)
+- [JSON](./basic/json.go)
 - [Time](./basic/time.go)
 - [Epoch](./basic/epoch.go)
 - [Time Formatting / Parsing](./basic/time-formatting-parsing.go)
