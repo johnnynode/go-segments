@@ -6,6 +6,9 @@ func main()  {
 	var a string = "initial"
 	fmt.Println(a)
 
+	var aa string
+	fmt.Println(aa)
+
 	var b, c int = 1, 2
 	fmt.Println(b, c)
 
@@ -23,6 +26,7 @@ func main()  {
 
 $ go run Basic/variables.go
 initial
+
 1 2
 true
 0
