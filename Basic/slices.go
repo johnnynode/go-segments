@@ -4,7 +4,7 @@ import "fmt"
 
 func main() {
 	s := make([]string, 3)
-	fmt.Println("emp:", 3) // emp: 3
+	fmt.Println("emp:", s) // emp: [   ]
 
 	s[0] = "a"
 	s[1] = "b"
@@ -48,7 +48,7 @@ func main() {
 /*
 
 $ go run Basic/slices.go
-emp: 3
+emp: [   ]
 set: [a b c]
 get: c
 len: 3
