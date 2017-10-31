@@ -59,7 +59,7 @@ func main() {
 	time.Sleep(time.Second)
 
 	readOpsFinal := atomic.LoadUint64(&readOps)
-	fmt.Print("readOps:", readOpsFinal)
+	fmt.Println("readOps:", readOpsFinal)
 	writeOpsFinal := atomic.LoadUint64(&writeOps)
 	fmt.Println("writeOps:", writeOpsFinal)
 
@@ -71,7 +71,8 @@ func main() {
 /*
 
 $ go run Basic/mutexes.go
-readOps:83900writeOps: 16800
-state: map[4:99 3:15 0:67 2:47 1:99]
+readOps: 83700
+writeOps: 16760
+state: map[0:77 2:62 3:10 1:46 4:36]
 
 */
