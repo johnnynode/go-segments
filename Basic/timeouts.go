@@ -35,6 +35,8 @@ func main() {
 
 /*
 
-
+$ go run Basic/timeouts.go
+timeout 1
+result 2
 
 */
