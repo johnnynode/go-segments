@@ -34,9 +34,25 @@ func main() {
 	for i := 1; i <= 5; i ++ {
 		burstyRequests <- i
 	}
-	close(burstyLimister)
+	close(burstyRequests)
 	for req := range burstyRequests {
 		<-burstyLimister
 		fmt.Println("request", req, time.Now())
 	}
 }
+
+/*
+
+$ go run Basic/rate-limiting.go
+request 1 2017-11-04 17:22:51.3472072 +0800 CST
+request 2 2017-11-04 17:22:51.5488542 +0800 CST
+request 3 2017-11-04 17:22:51.7475981 +0800 CST
+request 4 2017-11-04 17:22:51.9473478 +0800 CST
+request 5 2017-11-04 17:22:52.147337 +0800 CST
+request 1 2017-11-04 17:22:52.147337 +0800 CST
+request 2 2017-11-04 17:22:52.147337 +0800 CST
+request 3 2017-11-04 17:22:52.147337 +0800 CST
+request 4 2017-11-04 17:22:52.3480068 +0800 CST
+request 5 2017-11-04 17:22:52.5481853 +0800 CST
+
+*/
