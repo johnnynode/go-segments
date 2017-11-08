@@ -41,14 +41,6 @@ func main() {
 		if r, e := f2(i); e != nil {
 			fmt.Println("f2 failed:", e)
 		} else {
-			fmt.Println("f1 worked:", r)
-		}
-	}
-
-	for _, i := range []int{7, 42} {
-		if r, e := f2(i); e != nil {
-			fmt.Println("f2 failed:", e)
-		} else {
 			fmt.Println("f2 worked:", r)
 		}
 	}
@@ -64,8 +56,6 @@ func main() {
 $ go run Basic/errors.go
 f1 worked: 10
 f1 failed: can't work with 42
-f1 worked: 10
-f2 failed: 42 - can't work with it
 f2 worked: 10
 f2 failed: 42 - can't work with it
 42
