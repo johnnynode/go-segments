@@ -30,6 +30,10 @@ func (c circle) area() float64 {
 	return math.Pi * c.radius * c.radius
 }
 
+func (c circle) perim() float64 {
+	return 2 * math.Pi * c.radius
+}
+
 func measure(g geometry) {
 	fmt.Println(g)
 	fmt.Println(g.area())
@@ -43,3 +47,14 @@ func main() {
 	measure(r)
 	measure(c)
 }
+
+/*
+$ go run Basic/interfaces.go
+{3 4}
+12
+14
+{5}
+78.53981633974483
+31.41592653589793
+
+*/
