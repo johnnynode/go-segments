@@ -1,6 +1,8 @@
 go-segments
 ---
 
+Just code segments from the site "https://gobyexample.com/" for learning practice
+
 ### Code
 - [Hello World](./src/hello-world/hello-world.go)
 - [Values](./src/values/values.go)
